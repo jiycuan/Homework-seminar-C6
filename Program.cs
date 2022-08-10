@@ -42,11 +42,11 @@ void Zadacha43()
         }
     else
         {
-        x = Math.Round((b2-b1)/(k1-k2), 2);
-        y = Math.Round((k1*x) + b1, 2);
+        x = (b2-b1)/(k1-k2);
+        y = (k1*x) + b1;
         }
 
-    Console.WriteLine("Точка пересечения прямых: ("+x+"; "+y+")" );
+    Console.WriteLine("Точка пересечения прямых: " +Math.Round(x, 2) + "; " + Math.Round(y, 2) );
     }
 //Zadacha41();
 Zadacha43();
